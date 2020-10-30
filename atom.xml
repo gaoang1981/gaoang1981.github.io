@@ -6,7 +6,7 @@
   <link href="https://www.gao-ang.com/atom.xml" rel="self"/>
   
   <link href="https://www.gao-ang.com/"/>
-  <updated>2020-10-30T06:14:35.781Z</updated>
+  <updated>2020-10-30T06:22:15.698Z</updated>
   <id>https://www.gao-ang.com/</id>
   
   <author>
@@ -17,11 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Mac</title>
+    <link href="https://www.gao-ang.com/2020/10/30/Mac/"/>
+    <id>https://www.gao-ang.com/2020/10/30/Mac/</id>
+    <published>2020-10-30T06:20:05.000Z</published>
+    <updated>2020-10-30T06:22:15.698Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="mac-系统重装后，打包-lib-拷贝"><a href="#mac-系统重装后，打包-lib-拷贝" class="headerlink" title="mac 系统重装后，打包 lib 拷贝"></a>mac 系统重装后，打包 lib 拷贝</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br>cp -r * /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib<br></code></pre></td></tr></table></figure><h2 id="Mac-系统sudo-免密码"><a href="#Mac-系统sudo-免密码" class="headerlink" title="Mac 系统sudo 免密码"></a>Mac 系统sudo 免密码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo visudo<br><br>apicloud        ALL=(ALL:ALL) NOPASSWD:ALL<br></code></pre></td></tr></table></figure><h2 id="Mac-重启后根目录权限修改"><a href="#Mac-重启后根目录权限修改" class="headerlink" title="Mac 重启后根目录权限修改"></a>Mac 重启后根目录权限修改</h2><ul><li><p>重启mac，按住Command+R，等到系统进入安全模式。</p></li><li><p>选择一个账户，然后点击屏幕上方的工具栏找到命令行工具。</p></li><li><p>执行，命令</p></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">csrutil <span class="hljs-built_in">disable</span><br></code></pre></td></tr></table></figure><ul><li>重启电脑后，不要进入安全模式，执行命令</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo mount -uw /<br></code></pre></td></tr></table></figure><h2 id="homebrew-更新"><a href="#homebrew-更新" class="headerlink" title="homebrew 更新"></a>homebrew 更新</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#sdsd</span><br><span class="hljs-built_in">cd</span> <span class="hljs-string">&quot;<span class="hljs-subst">$(brew --repo)</span>”;</span><br><span class="hljs-string">git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git;</span><br><span class="hljs-string">cd &quot;</span>$(brew --repo)/Library/Taps/homebrew/homebrew-core”;<br>git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git;<br><span class="hljs-built_in">echo</span> <span class="hljs-string">&#x27;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles&#x27;</span> &gt;&gt; ~/.bash_profile;<br><span class="hljs-built_in">source</span> ~/.bash_profile<br></code></pre></td></tr></table></figure><h2 id="udid-pem-生成"><a href="#udid-pem-生成" class="headerlink" title="udid.pem 生成"></a>udid.pem 生成</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">cat  .crt和.key 合成为udid.pem<br>openssl rsa -<span class="hljs-keyword">in</span> .key -out udid.key<br></code></pre></td></tr></table></figure><h2 id="xcode-下载地址"><a href="#xcode-下载地址" class="headerlink" title="xcode 下载地址"></a>xcode 下载地址</h2><p><a href="https://developer.apple.com/download/more/">连接</a><br><a href="https://developer.apple.com/download/more/">https://developer.apple.com/download/more/</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;mac-系统重装后，打包-lib-拷贝&quot;&gt;&lt;a href=&quot;#mac-系统重装后，打包-lib-拷贝&quot; class=&quot;headerlink&quot; title=&quot;mac 系统重装后，打包 lib 拷贝&quot;&gt;&lt;/a&gt;mac 系统重装后，打包 lib 拷贝&lt;/h2&gt;&lt;figu</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android</title>
+    <link href="https://www.gao-ang.com/2020/10/30/Android/"/>
+    <id>https://www.gao-ang.com/2020/10/30/Android/</id>
+    <published>2020-10-30T06:19:45.000Z</published>
+    <updated>2020-10-30T06:20:59.753Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="获取apk-permissions"><a href="#获取apk-permissions" class="headerlink" title="获取apk permissions"></a>获取apk permissions</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">aapt d permissions apk路径<br></code></pre></td></tr></table></figure><h2 id="查找所有aar-并解压"><a href="#查找所有aar-并解压" class="headerlink" title="查找所有aar 并解压"></a>查找所有aar 并解压</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">for</span> z <span class="hljs-keyword">in</span> *.aar; <span class="hljs-keyword">do</span> unzip <span class="hljs-variable">$z</span> -d <span class="hljs-variable">$z</span>+<span class="hljs-string">&#x27;d&#x27;</span>; <span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure><h2 id="apk-加固腾讯网站"><a href="#apk-加固腾讯网站" class="headerlink" title="apk 加固腾讯网站"></a>apk 加固腾讯网站</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">https://console.cloud.tencent.com/ms<br></code></pre></td></tr></table></figure><h2 id="加固完后签名命令"><a href="#加固完后签名命令" class="headerlink" title="加固完后签名命令"></a>加固完后签名命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">java -jar apksigner.jar sign  --ks 证书文件路径  --ks-key-alias 证书<span class="hljs-built_in">alias</span>  --ks-pass pass:keystore文件密码  --key-pass pass:<span class="hljs-built_in">alias</span>对应密码  --out 输出apk文件路径 输入apk文件路径<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;获取apk-permissions&quot;&gt;&lt;a href=&quot;#获取apk-permissions&quot; class=&quot;headerlink&quot; title=&quot;获取apk permissions&quot;&gt;&lt;/a&gt;获取apk permissions&lt;/h2&gt;&lt;figure class</summary>
+      
+    
+    
+    
+    <category term="Android" scheme="https://www.gao-ang.com/categories/Android/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>股票</title>
     <link href="https://www.gao-ang.com/2020/10/30/%E8%82%A1%E7%A5%A8/"/>
     <id>https://www.gao-ang.com/2020/10/30/%E8%82%A1%E7%A5%A8/</id>
     <published>2020-10-30T06:12:38.000Z</published>
-    <updated>2020-10-30T06:14:35.781Z</updated>
+    <updated>2020-10-30T06:14:48.927Z</updated>
     
     <content type="html"><![CDATA[<h1 id="CCI指标"><a href="#CCI指标" class="headerlink" title="CCI指标"></a>CCI指标</h1><p>CCI指标出现“底背离”，即股价在不断下行中，而该CCI指标却在不断上行，当该指标在背离的情况下向上穿越-100的时候，股价就面临着底部。<br>当股价出现5日平均线向上金叉10日平均线的时候，在不破10日平均线收盘的情况下可以一路持有，直到5日平均线向上金叉30日平均线。此后，我们只要密切观察30日平均线的变化。如果发现30日平均线开始向上运行，那么，在该股正式走上上升通道后，股价起码上涨50％以上。</p><h1 id="KDJ指标"><a href="#KDJ指标" class="headerlink" title="KDJ指标"></a>KDJ指标</h1><p>1、KDJ日、周、月线低位金叉——低位启动，坚决买进<br>如果选定的目标股日线KDJ指标的D值小于20，KDJ形成低位金叉，而此时周线KDJ的J值在20以下向上金叉KD值，或在强势区向上运动；同时月线KDJ也在低中位运行，且方向朝上，可坚决买进。如果一只股票要产生较大的行情，必须满足周、月线指标的KDJ方向朝上，绝对没有例外！<br>2、KDJ日线金叉，周、月线高位运行——面临调整，不宜介入如果选定的目标股日线KDJ指标金叉，而周线J值在90以上，月线J值在80以上运行，这时，该股面临着中级调整，此时短线介入风险很大，不宜介入.<br>3、KDJ日线金叉，周线KDJ向上，月线KDJ向下——反弹行情，少量参与如果选定的目标股日线KDJ指标金叉，周线KDJ的运行方向朝上，而月线KDJ的运行方向朝下，则可能是反弹行情，可用少量资金参与.<br>4、KDJ日线金叉，周线KDJ向下，月线KDJ向上——主力洗盘，周线反转如果选定的目标股日线KDJ金叉，周线KDJ的运行方向朝下，而月线KDJ的运行方向朝上，则此时股价正在进行试盘后的洗盘，或挖坑，或主力刻意打压，可等周线KDJ方向反转后介入.<br>5、KDJ日、周、月线高位运行———风险在即，不宜介入如果选定的目标股日线KDJ的J值大于100，周线KDJ的J值大于90，月线KDJ的J大于80，风险就在眼前，不宜介入.<br>6、KDJ日线高位运行，周、月线低位运行——短线回调，二次金叉。<br>（１）周KDJ值在10以下；月J值在20以下；J值越低机会越大.<br>（２）J 值由低位向下转为向上；个股和大盘都有的机会！<br>（３）月KDJ低位—有大行情；周KDJ低位—有中级行情；日KDJ低位—有短线行情； （４）月KDJ低位—选好股可重仓；月KDJ中位—选好股可中仓；月KDJ高位—随时轻仓到空仓.<br>（５）月KDJ高位–有大级别调整；月J 值80以上；大盘和个股有暴跌风险！周KDJ高位—有中级调整；周J 值在90以上；大盘和个股有大跌风险,日KDJ高位—有短线调整；日J 值在100以上；大盘和个股有大跌风险.<br>（６）[月.周.日.KDJ]指标全部在80位死叉向下发散—-要彻底清仓！！<br>（７）[月.周.日.KDJ]全部在20低位金叉向上发散–满仓！<br>（８）[月KDJ]-[周KDJ]低位金叉向上；[日KDJ]高位死叉向下；逢低买入–<br>（９）[月KDJ]向上；[周KDJ]向下–有中级调整要空仓！耐心等[周KDJ]金叉.<br>（10）[月KDJ]向下；[周KDJ]向上–只有中短线行情；用少量资金介入。</p>]]></content>
     
@@ -69,15 +111,8 @@
     <link href="https://www.gao-ang.com/2020/10/29/work/"/>
     <id>https://www.gao-ang.com/2020/10/29/work/</id>
     <published>2020-10-29T11:24:12.000Z</published>
-    <updated>2020-10-30T05:30:59.366Z</updated>
+    <updated>2020-10-30T06:21:35.058Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="获取apk-permissions"><a href="#获取apk-permissions" class="headerlink" title="获取apk permissions"></a>获取apk permissions</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">aapt d permissions apk路径<br></code></pre></td></tr></table></figure><h2 id="查找所有aar-并解压"><a href="#查找所有aar-并解压" class="headerlink" title="查找所有aar 并解压"></a>查找所有aar 并解压</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">for</span> z <span class="hljs-keyword">in</span> *.aar; <span class="hljs-keyword">do</span> unzip <span class="hljs-variable">$z</span> -d <span class="hljs-variable">$z</span>+<span class="hljs-string">&#x27;d&#x27;</span>; <span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure><h2 id="apk-加固腾讯网站"><a href="#apk-加固腾讯网站" class="headerlink" title="apk 加固腾讯网站"></a>apk 加固腾讯网站</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">https://console.cloud.tencent.com/ms<br></code></pre></td></tr></table></figure><h2 id="加固完后签名命令"><a href="#加固完后签名命令" class="headerlink" title="加固完后签名命令"></a>加固完后签名命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">java -jar apksigner.jar sign  --ks 证书文件路径  --ks-key-alias 证书<span class="hljs-built_in">alias</span>  --ks-pass pass:keystore文件密码  --key-pass pass:<span class="hljs-built_in">alias</span>对应密码  --out 输出apk文件路径 输入apk文件路径<br></code></pre></td></tr></table></figure><h2 id="mac-系统重装后，打包-lib-拷贝"><a href="#mac-系统重装后，打包-lib-拷贝" class="headerlink" title="mac 系统重装后，打包 lib 拷贝"></a>mac 系统重装后，打包 lib 拷贝</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br>cp -r * /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib<br></code></pre></td></tr></table></figure><h2 id="Mac-系统sudo-免密码"><a href="#Mac-系统sudo-免密码" class="headerlink" title="Mac 系统sudo 免密码"></a>Mac 系统sudo 免密码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo visudo<br><br>apicloud        ALL=(ALL:ALL) NOPASSWD:ALL<br></code></pre></td></tr></table></figure><h2 id="Mac-重启后根目录权限修改"><a href="#Mac-重启后根目录权限修改" class="headerlink" title="Mac 重启后根目录权限修改"></a>Mac 重启后根目录权限修改</h2><h3 id="1-重启mac，按住Command-R，等到系统进入安全模式。"><a href="#1-重启mac，按住Command-R，等到系统进入安全模式。" class="headerlink" title="1.重启mac，按住Command+R，等到系统进入安全模式。"></a>1.重启mac，按住Command+R，等到系统进入安全模式。</h3><h3 id="2-选择一个账户，然后点击屏幕上方的工具栏找到命令行工具。"><a href="#2-选择一个账户，然后点击屏幕上方的工具栏找到命令行工具。" class="headerlink" title="2.选择一个账户，然后点击屏幕上方的工具栏找到命令行工具。"></a>2.选择一个账户，然后点击屏幕上方的工具栏找到命令行工具。</h3><h3 id="3-执行，命令"><a href="#3-执行，命令" class="headerlink" title="3.执行，命令"></a>3.执行，命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">csrutil <span class="hljs-built_in">disable</span><br></code></pre></td></tr></table></figure><h3 id="4-重启电脑后，不要进入安全模式，执行命令"><a href="#4-重启电脑后，不要进入安全模式，执行命令" class="headerlink" title="4.重启电脑后，不要进入安全模式，执行命令"></a>4.重启电脑后，不要进入安全模式，执行命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo mount -uw /<br></code></pre></td></tr></table></figure><h2 id="homebrew-更新"><a href="#homebrew-更新" class="headerlink" title="homebrew 更新"></a>homebrew 更新</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#sdsd</span><br><span class="hljs-built_in">cd</span> <span class="hljs-string">&quot;<span class="hljs-subst">$(brew --repo)</span>”;</span><br><span class="hljs-string">git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git;</span><br><span class="hljs-string">cd &quot;</span>$(brew --repo)/Library/Taps/homebrew/homebrew-core”;<br>git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git;<br><span class="hljs-built_in">echo</span> <span class="hljs-string">&#x27;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles&#x27;</span> &gt;&gt; ~/.bash_profile;<br><span class="hljs-built_in">source</span> ~/.bash_profile<br></code></pre></td></tr></table></figure><h2 id="udid-pem-生成"><a href="#udid-pem-生成" class="headerlink" title="udid.pem 生成"></a>udid.pem 生成</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">cat  .crt和.key 合成为udid.pem<br>openssl rsa -<span class="hljs-keyword">in</span> .key -out udid.key<br></code></pre></td></tr></table></figure><h2 id="xcode-下载地址"><a href="#xcode-下载地址" class="headerlink" title="xcode 下载地址"></a>xcode 下载地址</h2><p><a href="https://developer.apple.com/download/more/">连接</a><br><a href="https://developer.apple.com/download/more/">https://developer.apple.com/download/more/</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;获取apk-permissions&quot;&gt;&lt;a href=&quot;#获取apk-permissions&quot; class=&quot;headerlink&quot; title=&quot;获取apk permissions&quot;&gt;&lt;/a&gt;获取apk permissions&lt;/h2&gt;&lt;figure class</summary>
-      
     
     
     

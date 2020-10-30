@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>工作笔记 | 博客</title>
+    <title>Android | 博客</title>
     
     
         <meta property="og:site_name" content="博客">
@@ -74,9 +74,9 @@
     <article>
         <div class="article-title">
     <h2>
-        <a href="/2020/10/29/work/" class="shake shake-little" title="工作笔记">
+        <a href="/2020/10/30/Android/" class="shake shake-little" title="Android">
             
-            工作笔记
+            Android
         </a>
     </h2>
     <div class="meta_box">
@@ -94,13 +94,13 @@
         
             <div class="meta meta_cate">
                 <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-                <p><a class="article-category-link" href="/categories/%E5%B7%A5%E4%BD%9C/">工作</a></p>
+                <p><a class="article-category-link" href="/categories/Android/">Android</a></p>
             </div>
         
         
         <div class="meta meta_date">
             <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-            <p>发布于：2020年10月29日</p>
+            <p>发布于：2020年10月30日</p>
         </div>
     
         <div class="meta meta_update">
@@ -117,13 +117,20 @@
             
             
             
-            
+            <h2 id="获取apk-permissions"><a href="#获取apk-permissions" class="headerlink" title="获取apk permissions"></a>获取apk permissions</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">aapt d permissions apk路径<br></code></pre></td></tr></table></figure>
+
+<h2 id="查找所有aar-并解压"><a href="#查找所有aar-并解压" class="headerlink" title="查找所有aar 并解压"></a>查找所有aar 并解压</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">for</span> z <span class="hljs-keyword">in</span> *.aar; <span class="hljs-keyword">do</span> unzip <span class="hljs-variable">$z</span> -d <span class="hljs-variable">$z</span>+<span class="hljs-string">&#x27;d&#x27;</span>; <span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="apk-加固腾讯网站"><a href="#apk-加固腾讯网站" class="headerlink" title="apk 加固腾讯网站"></a>apk 加固腾讯网站</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">https://console.cloud.tencent.com/ms<br></code></pre></td></tr></table></figure>
+
+<h2 id="加固完后签名命令"><a href="#加固完后签名命令" class="headerlink" title="加固完后签名命令"></a>加固完后签名命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">java -jar apksigner.jar sign  --ks 证书文件路径  --ks-key-alias 证书<span class="hljs-built_in">alias</span>  --ks-pass pass:keystore文件密码  --key-pass pass:<span class="hljs-built_in">alias</span>对应密码  --out 输出apk文件路径 输入apk文件路径<br></code></pre></td></tr></table></figure>
+
         </div>
         <div class="article-copyright">
             
     <blockquote>
         <p>
-            版权声明：本文为「高昂」的原创文章，博客内容遵循 署名-非商业性使用-相同方式共享 协议。<br>本文永久链接是：https://www.gao-ang.com/2020/10/29/work/
+            版权声明：本文为「高昂」的原创文章，博客内容遵循 署名-非商业性使用-相同方式共享 协议。<br>本文永久链接是：https://www.gao-ang.com/2020/10/30/Android/
         </p>
     </blockquote>
 
@@ -131,6 +138,11 @@
         </div>
     </article>
     
+
+    <section id="toc-div" >
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96apk-permissions"><span class="toc-text">获取apk permissions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E6%89%80%E6%9C%89aar-%E5%B9%B6%E8%A7%A3%E5%8E%8B"><span class="toc-text">查找所有aar 并解压</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#apk-%E5%8A%A0%E5%9B%BA%E8%85%BE%E8%AE%AF%E7%BD%91%E7%AB%99"><span class="toc-text">apk 加固腾讯网站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A0%E5%9B%BA%E5%AE%8C%E5%90%8E%E7%AD%BE%E5%90%8D%E5%91%BD%E4%BB%A4"><span class="toc-text">加固完后签名命令</span></a></li></ol>
+    </section>
+    <section id="gohome" style="display: none;"><a>顶</a></section>
 
     <script>
         function get_top_by_link(link){
