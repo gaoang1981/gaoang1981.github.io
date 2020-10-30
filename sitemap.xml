@@ -30,13 +30,6 @@
   </url>
   
   <url>
-    <loc>https://www.gao-ang.com/tags/index.html</loc>
-    
-    <lastmod>2020-10-30</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.gao-ang.com/categories/index.html</loc>
     
     <lastmod>2020-10-30</lastmod>
@@ -51,13 +44,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://www.gao-ang.com/tags/%E5%B7%A5%E4%BD%9C/</loc>
-    <lastmod>2020-10-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
   
 
   
