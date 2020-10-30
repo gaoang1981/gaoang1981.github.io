@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>工作笔记 | 博客</title>
+    
+    
+        <meta property="og:site_name" content="博客">
+    
+    
+        <meta property="article:author" content="高昂">
+    
+    
+        <link rel="icon" href="/img/favicon.ico">
+    
+    
+<link rel="stylesheet" href="/css/minireset.min.css">
+
+    
+<link rel="stylesheet" href="/css/all.min.css">
+
+    
+<link rel="stylesheet" href="/css/csshake.min.css">
+
+    
+<link rel="stylesheet" href="/css/hljs/lioshi.css">
+
+    
+<link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+
+    
+<link rel="stylesheet" href="/styl/main.css">
+
+    
+<script src="/js/jquery.min.js"></script>
+
+    
+<script src="/js/highlight.min.js"></script>
+
+    
+<script src="/js/jquery.fancybox.min.js"></script>
+
+    
+<script src="/js/clipboard.min.js"></script>
+
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="博客" type="application/atom+xml">
+</head>
+<body>
+    <header>
+  <div class="outer">
+    <div class="inner">
+      <h1 class="logo-wrap">
+        <a>博客<b><sup>1.1</sup></b></a>
+      </h1>
+    </div>
+    <div class="inner">
+      <nav class="main-nav">
+        
+          <a href="/">首页</a>
+        
+          <a href="/archives">归档</a>
+        
+          <a href="/categories">分类</a>
+        
+          <a href="/tags">标签</a>
+        
+          <a href="/about">关于</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+    <div class="content">
+        <section class="outer">
+    <article>
+        <div class="article-title">
+    <h2>
+        <a href="/2020/10/29/work/" class="shake shake-little" title="工作笔记">
+            
+            工作笔记
+        </a>
+    </h2>
+    <div class="meta_box">
+    
+        
+        
+            
+                
+        
+        <div class="meta meta_auth">
+            <img src="/img/default.png" alt="head" />
+            <p>高昂</p>
+        </div>
+    
+        
+            <div class="meta meta_cate">
+                <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+                <p><a class="article-category-link" href="/categories/%E5%B7%A5%E4%BD%9C/">工作</a></p>
+            </div>
+        
+        
+        <div class="meta meta_date">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+            <p>发布于：2020年10月29日</p>
+        </div>
+    
+        <div class="meta meta_update">
+            <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+            <p>更新于：2020年10月30日</p>
+        </div>
+    </div>
+    
+  <div class="post_tags">
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E4%BD%9C/" rel="tag"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>工作</a></li></ul>
+  </div>
+
+
+</div>
+
+        <hr>
+        <div class="article-entry">
+            
+            
+            
+            <h2 id="获取apk-permissions"><a href="#获取apk-permissions" class="headerlink" title="获取apk permissions"></a>获取apk permissions</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">aapt d permissions apk路径<br></code></pre></td></tr></table></figure>
+
+<h2 id="查找所有aar-并解压"><a href="#查找所有aar-并解压" class="headerlink" title="查找所有aar 并解压"></a>查找所有aar 并解压</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">for</span> z <span class="hljs-keyword">in</span> *.aar; <span class="hljs-keyword">do</span> unzip <span class="hljs-variable">$z</span> -d <span class="hljs-variable">$z</span>+<span class="hljs-string">&#x27;d&#x27;</span>; <span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="apk-加固腾讯网站"><a href="#apk-加固腾讯网站" class="headerlink" title="apk 加固腾讯网站"></a>apk 加固腾讯网站</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">https://console.cloud.tencent.com/ms<br></code></pre></td></tr></table></figure>
+
+<h2 id="加固完后签名命令"><a href="#加固完后签名命令" class="headerlink" title="加固完后签名命令"></a>加固完后签名命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">java -jar apksigner.jar sign  --ks 证书文件路径  --ks-key-alias 证书<span class="hljs-built_in">alias</span>  --ks-pass pass:keystore文件密码  --key-pass pass:<span class="hljs-built_in">alias</span>对应密码  --out 输出apk文件路径 输入apk文件路径<br></code></pre></td></tr></table></figure>
+
+<h2 id="mac-系统重装后，打包-lib-拷贝"><a href="#mac-系统重装后，打包-lib-拷贝" class="headerlink" title="mac 系统重装后，打包 lib 拷贝"></a>mac 系统重装后，打包 lib 拷贝</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br>cp -r * /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib<br></code></pre></td></tr></table></figure>
+
+<h2 id="Mac-系统sudo-免密码"><a href="#Mac-系统sudo-免密码" class="headerlink" title="Mac 系统sudo 免密码"></a>Mac 系统sudo 免密码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo visudo<br><br>apicloud        ALL=(ALL:ALL) NOPASSWD:ALL<br></code></pre></td></tr></table></figure>
+
+<h2 id="Mac-重启后根目录权限修改"><a href="#Mac-重启后根目录权限修改" class="headerlink" title="Mac 重启后根目录权限修改"></a>Mac 重启后根目录权限修改</h2><h3 id="1-重启mac，按住Command-R，等到系统进入安全模式。"><a href="#1-重启mac，按住Command-R，等到系统进入安全模式。" class="headerlink" title="1.重启mac，按住Command+R，等到系统进入安全模式。"></a>1.重启mac，按住Command+R，等到系统进入安全模式。</h3><h3 id="2-选择一个账户，然后点击屏幕上方的工具栏找到命令行工具。"><a href="#2-选择一个账户，然后点击屏幕上方的工具栏找到命令行工具。" class="headerlink" title="2.选择一个账户，然后点击屏幕上方的工具栏找到命令行工具。"></a>2.选择一个账户，然后点击屏幕上方的工具栏找到命令行工具。</h3><h3 id="3-执行，命令"><a href="#3-执行，命令" class="headerlink" title="3.执行，命令"></a>3.执行，命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">csrutil <span class="hljs-built_in">disable</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="4-重启电脑后，不要进入安全模式，执行命令"><a href="#4-重启电脑后，不要进入安全模式，执行命令" class="headerlink" title="4.重启电脑后，不要进入安全模式，执行命令"></a>4.重启电脑后，不要进入安全模式，执行命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo mount -uw /<br></code></pre></td></tr></table></figure>
+
+<h2 id="homebrew-更新"><a href="#homebrew-更新" class="headerlink" title="homebrew 更新"></a>homebrew 更新</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#sdsd</span><br><span class="hljs-built_in">cd</span> <span class="hljs-string">&quot;<span class="hljs-subst">$(brew --repo)</span>”;</span><br><span class="hljs-string">git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git;</span><br><span class="hljs-string">cd &quot;</span>$(brew --repo)/Library/Taps/homebrew/homebrew-core”;<br>git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git;<br><span class="hljs-built_in">echo</span> <span class="hljs-string">&#x27;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles&#x27;</span> &gt;&gt; ~/.bash_profile;<br><span class="hljs-built_in">source</span> ~/.bash_profile<br></code></pre></td></tr></table></figure>
+
+<h2 id="udid-pem-生成"><a href="#udid-pem-生成" class="headerlink" title="udid.pem 生成"></a>udid.pem 生成</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">cat  .crt和.key 合成为udid.pem<br>openssl rsa -<span class="hljs-keyword">in</span> .key -out udid.key<br></code></pre></td></tr></table></figure>
+
+<h2 id="xcode-下载地址"><a href="#xcode-下载地址" class="headerlink" title="xcode 下载地址"></a>xcode 下载地址</h2><p><a target="_blank" rel="noopener" href="https://developer.apple.com/download/more/">连接</a><br><a target="_blank" rel="noopener" href="https://developer.apple.com/download/more/">https://developer.apple.com/download/more/</a></p>
+
+        </div>
+        <div class="article-copyright">
+            
+    <blockquote>
+        <p>
+            版权声明：本文为「高昂」的原创文章，博客内容遵循 署名-非商业性使用-相同方式共享 协议。<br>本文永久链接是：https://www.gao-ang.com/2020/10/29/work/
+        </p>
+    </blockquote>
+
+
+        </div>
+    </article>
+    
+
+    <section id="toc-div" >
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96apk-permissions"><span class="toc-text">获取apk permissions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E6%89%80%E6%9C%89aar-%E5%B9%B6%E8%A7%A3%E5%8E%8B"><span class="toc-text">查找所有aar 并解压</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#apk-%E5%8A%A0%E5%9B%BA%E8%85%BE%E8%AE%AF%E7%BD%91%E7%AB%99"><span class="toc-text">apk 加固腾讯网站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A0%E5%9B%BA%E5%AE%8C%E5%90%8E%E7%AD%BE%E5%90%8D%E5%91%BD%E4%BB%A4"><span class="toc-text">加固完后签名命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mac-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E5%90%8E%EF%BC%8C%E6%89%93%E5%8C%85-lib-%E6%8B%B7%E8%B4%9D"><span class="toc-text">mac 系统重装后，打包 lib 拷贝</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mac-%E7%B3%BB%E7%BB%9Fsudo-%E5%85%8D%E5%AF%86%E7%A0%81"><span class="toc-text">Mac 系统sudo 免密码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mac-%E9%87%8D%E5%90%AF%E5%90%8E%E6%A0%B9%E7%9B%AE%E5%BD%95%E6%9D%83%E9%99%90%E4%BF%AE%E6%94%B9"><span class="toc-text">Mac 重启后根目录权限修改</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%87%8D%E5%90%AFmac%EF%BC%8C%E6%8C%89%E4%BD%8FCommand-R%EF%BC%8C%E7%AD%89%E5%88%B0%E7%B3%BB%E7%BB%9F%E8%BF%9B%E5%85%A5%E5%AE%89%E5%85%A8%E6%A8%A1%E5%BC%8F%E3%80%82"><span class="toc-text">1.重启mac，按住Command+R，等到系统进入安全模式。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA%E8%B4%A6%E6%88%B7%EF%BC%8C%E7%84%B6%E5%90%8E%E7%82%B9%E5%87%BB%E5%B1%8F%E5%B9%95%E4%B8%8A%E6%96%B9%E7%9A%84%E5%B7%A5%E5%85%B7%E6%A0%8F%E6%89%BE%E5%88%B0%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E3%80%82"><span class="toc-text">2.选择一个账户，然后点击屏幕上方的工具栏找到命令行工具。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%89%A7%E8%A1%8C%EF%BC%8C%E5%91%BD%E4%BB%A4"><span class="toc-text">3.执行，命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E9%87%8D%E5%90%AF%E7%94%B5%E8%84%91%E5%90%8E%EF%BC%8C%E4%B8%8D%E8%A6%81%E8%BF%9B%E5%85%A5%E5%AE%89%E5%85%A8%E6%A8%A1%E5%BC%8F%EF%BC%8C%E6%89%A7%E8%A1%8C%E5%91%BD%E4%BB%A4"><span class="toc-text">4.重启电脑后，不要进入安全模式，执行命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#homebrew-%E6%9B%B4%E6%96%B0"><span class="toc-text">homebrew 更新</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#udid-pem-%E7%94%9F%E6%88%90"><span class="toc-text">udid.pem 生成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#xcode-%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80"><span class="toc-text">xcode 下载地址</span></a></li></ol>
+    </section>
+    <section id="gohome" style="display: none;"><a>顶</a></section>
+
+    <script>
+        function get_top_by_link(link){
+            var hnid = "#" + $(link).attr("data");
+            if ($(hnid).length > 0){
+                return $(hnid).offset().top;
+            }else{
+                return 0;
+            }
+        }
+        //go to hn
+        function gotohn(link){
+            $("html,body").animate({scrollTop: get_top_by_link(link) }, 300);
+        }
+        //页面滚动
+        function update(){
+            var scrollH = $(window).scrollTop();
+            if($(".toc-link")){
+                $(".toc-link").each(function(i,link){
+                    var mdHeight = get_top_by_link(link);
+                    if(mdHeight <= scrollH + 40){
+                        //高亮导航菜单
+                        $('.toc-link').removeClass('on');
+                        $(link).addClass('on');
+                    }
+                });
+            }
+            //返回顶部显隐
+            if(scrollH < 200){
+                $("#gohome").css("display","none");
+            }else{
+                $("#gohome").css("display","block");
+            }
+        }
+        $(function(){
+            //修复部分锚点从属关系
+            if($("#toc-div >li").length > 0){
+                $("#toc-div >li").appendTo($("#toc-div >ol:first"));
+            }
+            //返回顶部
+            $('#gohome').click(function(){
+                $("html,body").animate({scrollTop: 0}, 300);
+                return false;
+            })
+            //遍历锚点
+            $(".toc-link").each(function(i,link){
+                $(link).attr("data",$(link).attr('href').substring(1));
+                $(link).attr("href","javascript:void(0);");
+                $(link).attr("onclick","gotohn(this);");
+            })
+            //绑定滚动事件
+            $(window).bind('scroll', update);
+            //初始化toc
+            var first_toc = $(".toc-link")[0];
+            var first_scroll = get_top_by_link(first_toc);
+            var window_scroll = $(window).scrollTop();
+            if(window_scroll <= first_scroll){
+                $(first_toc).addClass('on');
+            }
+        })
+    </script>
+
+</section>
+    </div>
+    <footer>
+    <div class="outer">
+        <div class="inner">
+            Powered by <a href="http://prowiki.demopage.icu/" target="_blank">ProWiki</a>
+            &copy;2020 高昂<br>
+            <a target="_blank" rel="noopener" href="http://beian.miit.gov.cn/"></a>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/custom.js"></script>
+
+
+    <script>onload_content();</script>
+
+</body>
+</html>
