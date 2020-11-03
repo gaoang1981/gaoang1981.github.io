@@ -6,7 +6,7 @@
   <link href="https://www.gao-ang.com/atom.xml" rel="self"/>
   
   <link href="https://www.gao-ang.com/"/>
-  <updated>2020-10-30T06:22:15.698Z</updated>
+  <updated>2020-11-03T08:18:12.477Z</updated>
   <id>https://www.gao-ang.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux命令</title>
+    <link href="https://www.gao-ang.com/2020/11/03/Linux%E5%91%BD%E4%BB%A4/"/>
+    <id>https://www.gao-ang.com/2020/11/03/Linux%E5%91%BD%E4%BB%A4/</id>
+    <published>2020-11-03T08:16:55.000Z</published>
+    <updated>2020-11-03T08:18:12.477Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="grep命令查找当前目录下包含某个字符串的所有文件"><a href="#grep命令查找当前目录下包含某个字符串的所有文件" class="headerlink" title="grep命令查找当前目录下包含某个字符串的所有文件"></a>grep命令查找当前目录下包含某个字符串的所有文件</h2><figure class="highlight plain"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nashorn">grep -r xxx .&#x2F;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;grep命令查找当前目录下包含某个字符串的所有文件&quot;&gt;&lt;a href=&quot;#grep命令查找当前目录下包含某个字符串的所有文件&quot; class=&quot;headerlink&quot; title=&quot;grep命令查找当前目录下包含某个字符串的所有文件&quot;&gt;&lt;/a&gt;grep命令查找当前目</summary>
+      
+    
+    
+    
+    <category term="工作" scheme="https://www.gao-ang.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Mac</title>
     <link href="https://www.gao-ang.com/2020/10/30/Mac/"/>
     <id>https://www.gao-ang.com/2020/10/30/Mac/</id>
     <published>2020-10-30T06:20:05.000Z</published>
-    <updated>2020-10-30T06:22:15.698Z</updated>
+    <updated>2020-10-30T06:23:23.327Z</updated>
     
     <content type="html"><![CDATA[<h2 id="mac-系统重装后，打包-lib-拷贝"><a href="#mac-系统重装后，打包-lib-拷贝" class="headerlink" title="mac 系统重装后，打包 lib 拷贝"></a>mac 系统重装后，打包 lib 拷贝</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br>cp -r * /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib<br></code></pre></td></tr></table></figure><h2 id="Mac-系统sudo-免密码"><a href="#Mac-系统sudo-免密码" class="headerlink" title="Mac 系统sudo 免密码"></a>Mac 系统sudo 免密码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo visudo<br><br>apicloud        ALL=(ALL:ALL) NOPASSWD:ALL<br></code></pre></td></tr></table></figure><h2 id="Mac-重启后根目录权限修改"><a href="#Mac-重启后根目录权限修改" class="headerlink" title="Mac 重启后根目录权限修改"></a>Mac 重启后根目录权限修改</h2><ul><li><p>重启mac，按住Command+R，等到系统进入安全模式。</p></li><li><p>选择一个账户，然后点击屏幕上方的工具栏找到命令行工具。</p></li><li><p>执行，命令</p></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">csrutil <span class="hljs-built_in">disable</span><br></code></pre></td></tr></table></figure><ul><li>重启电脑后，不要进入安全模式，执行命令</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo mount -uw /<br></code></pre></td></tr></table></figure><h2 id="homebrew-更新"><a href="#homebrew-更新" class="headerlink" title="homebrew 更新"></a>homebrew 更新</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment">#sdsd</span><br><span class="hljs-built_in">cd</span> <span class="hljs-string">&quot;<span class="hljs-subst">$(brew --repo)</span>”;</span><br><span class="hljs-string">git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git;</span><br><span class="hljs-string">cd &quot;</span>$(brew --repo)/Library/Taps/homebrew/homebrew-core”;<br>git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git;<br><span class="hljs-built_in">echo</span> <span class="hljs-string">&#x27;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles&#x27;</span> &gt;&gt; ~/.bash_profile;<br><span class="hljs-built_in">source</span> ~/.bash_profile<br></code></pre></td></tr></table></figure><h2 id="udid-pem-生成"><a href="#udid-pem-生成" class="headerlink" title="udid.pem 生成"></a>udid.pem 生成</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">cat  .crt和.key 合成为udid.pem<br>openssl rsa -<span class="hljs-keyword">in</span> .key -out udid.key<br></code></pre></td></tr></table></figure><h2 id="xcode-下载地址"><a href="#xcode-下载地址" class="headerlink" title="xcode 下载地址"></a>xcode 下载地址</h2><p><a href="https://developer.apple.com/download/more/">连接</a><br><a href="https://developer.apple.com/download/more/">https://developer.apple.com/download/more/</a></p>]]></content>
     
@@ -41,7 +63,7 @@
     <link href="https://www.gao-ang.com/2020/10/30/Android/"/>
     <id>https://www.gao-ang.com/2020/10/30/Android/</id>
     <published>2020-10-30T06:19:45.000Z</published>
-    <updated>2020-10-30T06:20:59.753Z</updated>
+    <updated>2020-10-30T06:23:23.326Z</updated>
     
     <content type="html"><![CDATA[<h2 id="获取apk-permissions"><a href="#获取apk-permissions" class="headerlink" title="获取apk permissions"></a>获取apk permissions</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">aapt d permissions apk路径<br></code></pre></td></tr></table></figure><h2 id="查找所有aar-并解压"><a href="#查找所有aar-并解压" class="headerlink" title="查找所有aar 并解压"></a>查找所有aar 并解压</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-keyword">for</span> z <span class="hljs-keyword">in</span> *.aar; <span class="hljs-keyword">do</span> unzip <span class="hljs-variable">$z</span> -d <span class="hljs-variable">$z</span>+<span class="hljs-string">&#x27;d&#x27;</span>; <span class="hljs-keyword">done</span><br></code></pre></td></tr></table></figure><h2 id="apk-加固腾讯网站"><a href="#apk-加固腾讯网站" class="headerlink" title="apk 加固腾讯网站"></a>apk 加固腾讯网站</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">https://console.cloud.tencent.com/ms<br></code></pre></td></tr></table></figure><h2 id="加固完后签名命令"><a href="#加固完后签名命令" class="headerlink" title="加固完后签名命令"></a>加固完后签名命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">java -jar apksigner.jar sign  --ks 证书文件路径  --ks-key-alias 证书<span class="hljs-built_in">alias</span>  --ks-pass pass:keystore文件密码  --key-pass pass:<span class="hljs-built_in">alias</span>对应密码  --out 输出apk文件路径 输入apk文件路径<br></code></pre></td></tr></table></figure>]]></content>
     
