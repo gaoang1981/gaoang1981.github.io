@@ -6,7 +6,7 @@
   <link href="https://www.gao-ang.com/atom.xml" rel="self"/>
   
   <link href="https://www.gao-ang.com/"/>
-  <updated>2020-11-03T10:42:06.788Z</updated>
+  <updated>2020-11-03T10:44:03.046Z</updated>
   <id>https://www.gao-ang.com/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://www.gao-ang.com/2020/11/03/Linux%E5%91%BD%E4%BB%A4/"/>
     <id>https://www.gao-ang.com/2020/11/03/Linux%E5%91%BD%E4%BB%A4/</id>
     <published>2020-11-03T08:16:55.000Z</published>
-    <updated>2020-11-03T10:42:06.788Z</updated>
+    <updated>2020-11-03T10:44:03.046Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="grep命令查找当前目录下包含某个字符串的所有文件"><a href="#grep命令查找当前目录下包含某个字符串的所有文件" class="headerlink" title="grep命令查找当前目录下包含某个字符串的所有文件"></a>grep命令查找当前目录下包含某个字符串的所有文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">grep -r xxx ./<br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-grep命令查找当前目录下包含某个字符串的所有文件"><a href="#1-grep命令查找当前目录下包含某个字符串的所有文件" class="headerlink" title="1. grep命令查找当前目录下包含某个字符串的所有文件"></a>1. grep命令查找当前目录下包含某个字符串的所有文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">grep -r xxx ./<br></code></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;grep命令查找当前目录下包含某个字符串的所有文件&quot;&gt;&lt;a href=&quot;#grep命令查找当前目录下包含某个字符串的所有文件&quot; class=&quot;headerlink&quot; title=&quot;grep命令查找当前目录下包含某个字符串的所有文件&quot;&gt;&lt;/a&gt;grep命令查找当前目</summary>
+    <summary type="html">&lt;h2 id=&quot;1-grep命令查找当前目录下包含某个字符串的所有文件&quot;&gt;&lt;a href=&quot;#1-grep命令查找当前目录下包含某个字符串的所有文件&quot; class=&quot;headerlink&quot; title=&quot;1. grep命令查找当前目录下包含某个字符串的所有文件&quot;&gt;&lt;/a&gt;1. g</summary>
       
     
     
