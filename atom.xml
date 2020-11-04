@@ -6,7 +6,7 @@
   <link href="https://www.gao-ang.com/atom.xml" rel="self"/>
   
   <link href="https://www.gao-ang.com/"/>
-  <updated>2020-11-04T06:20:21.835Z</updated>
+  <updated>2020-11-04T06:20:48.400Z</updated>
   <id>https://www.gao-ang.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.gao-ang.com/2020/11/04/sql/"/>
     <id>https://www.gao-ang.com/2020/11/04/sql/</id>
     <published>2020-11-04T06:14:47.000Z</published>
-    <updated>2020-11-04T06:20:21.835Z</updated>
+    <updated>2020-11-04T06:20:48.400Z</updated>
     
     <content type="html"><![CDATA[<h2 id="时间格式化"><a href="#时间格式化" class="headerlink" title="时间格式化"></a>时间格式化</h2><ul><li>时间戳格式化<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">FROM_UNIXTIME(LEFT(teu.loginTime,10),<span class="hljs-string">&#x27;%Y-%m-%d %H:%i:%S&#x27;</span>)<br></code></pre></td></tr></table></figure></li><li>Date 格式化<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">DATE_FORMAT(ct,<span class="hljs-string">&#x27;%Y-%m-%d %H:%i:%S&#x27;</span>) ct<br></code></pre></td></tr></table></figure></li></ul>]]></content>
     
@@ -44,9 +44,9 @@
     <link href="https://www.gao-ang.com/2020/11/03/Linux%E5%91%BD%E4%BB%A4/"/>
     <id>https://www.gao-ang.com/2020/11/03/Linux%E5%91%BD%E4%BB%A4/</id>
     <published>2020-11-03T08:16:55.000Z</published>
-    <updated>2020-11-03T10:44:03.046Z</updated>
+    <updated>2020-11-04T06:47:54.423Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="1-grep命令查找当前目录下包含某个字符串的所有文件"><a href="#1-grep命令查找当前目录下包含某个字符串的所有文件" class="headerlink" title="1. grep命令查找当前目录下包含某个字符串的所有文件"></a>1. grep命令查找当前目录下包含某个字符串的所有文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">grep -r xxx ./<br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-grep命令查找当前目录下包含某个字符串的所有文件"><a href="#1-grep命令查找当前目录下包含某个字符串的所有文件" class="headerlink" title="1. grep命令查找当前目录下包含某个字符串的所有文件"></a>1. grep命令查找当前目录下包含某个字符串的所有文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">grep -r xxx ./<br></code></pre></td></tr></table></figure><h2 id="2-linux-服务器时间同步"><a href="#2-linux-服务器时间同步" class="headerlink" title="2. linux 服务器时间同步"></a>2. linux 服务器时间同步</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">ntpdate -u ntp.api.bz<br>ntpdate -u 210.72.145.44<br></code></pre></td></tr></table></figure>]]></content>
     
     
       
