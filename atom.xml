@@ -6,7 +6,7 @@
   <link href="https://www.gao-ang.com/atom.xml" rel="self"/>
   
   <link href="https://www.gao-ang.com/"/>
-  <updated>2020-11-03T10:44:03.046Z</updated>
+  <updated>2020-11-04T06:20:21.835Z</updated>
   <id>https://www.gao-ang.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sql</title>
+    <link href="https://www.gao-ang.com/2020/11/04/sql/"/>
+    <id>https://www.gao-ang.com/2020/11/04/sql/</id>
+    <published>2020-11-04T06:14:47.000Z</published>
+    <updated>2020-11-04T06:20:21.835Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="时间格式化"><a href="#时间格式化" class="headerlink" title="时间格式化"></a>时间格式化</h2><ul><li>时间戳格式化<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">FROM_UNIXTIME(LEFT(teu.loginTime,10),<span class="hljs-string">&#x27;%Y-%m-%d %H:%i:%S&#x27;</span>)<br></code></pre></td></tr></table></figure></li><li>Date 格式化<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">DATE_FORMAT(ct,<span class="hljs-string">&#x27;%Y-%m-%d %H:%i:%S&#x27;</span>) ct<br></code></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;时间格式化&quot;&gt;&lt;a href=&quot;#时间格式化&quot; class=&quot;headerlink&quot; title=&quot;时间格式化&quot;&gt;&lt;/a&gt;时间格式化&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;时间戳格式化&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td </summary>
+      
+    
+    
+    
+    <category term="工作" scheme="https://www.gao-ang.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Linux命令</title>
